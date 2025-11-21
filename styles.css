@@ -34,10 +34,11 @@ p {
         rgba(20, 20, 20, 0.95),
         rgba(20, 20, 20, 0.85)
     ),
-    url('https://images.unsplash.com/photo-1529074963764-98f45c47344b?auto=format&fit=crop&w=1920&q=80') center/cover;
+    url('https://i.imgur.com/DTn0d9D.jpg') center/cover;
     border-bottom: 1px solid #3e3225;
     box-shadow: 0 6px 20px rgba(0,0,0,0.5);
 }
+
 
 .site-header h1 {
     font-size: 3.5rem;
