@@ -28,16 +28,17 @@ p {
 /* HEADER */
 
 .site-header {
+    position: relative;
     text-align: center;
-    padding: 100px 30px 70px;
-    background: linear-gradient(
-        rgba(20, 20, 20, 0.95),
-        rgba(20, 20, 20, 0.85)
-    ),
-    url('https://i.imgur.com/DTn0d9D.jpg') center/cover;
+    padding: 120px 30px 100px;
+    background:
+        linear-gradient(rgba(20, 20, 20, 0.95), rgba(20, 20, 20, 0.88)),
+        url('https://i.imgur.com/DTn0d9D.jpg') center/cover;
     border-bottom: 1px solid #3e3225;
+    overflow: hidden;
     box-shadow: 0 6px 20px rgba(0,0,0,0.5);
 }
+
 
 
 .site-header h1 {
