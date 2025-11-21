@@ -164,3 +164,65 @@ p {
         font-size: 2.5rem;
     }
 }
+
+/* ------------------------------
+   GLOBAL MAGICAL OVERLAY LAYERS
+-------------------------------*/
+
+.magic-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+/* 1. Candle Flicker Glow Layer */
+.glow-layer {
+    background: radial-gradient(
+        circle at 50% 20%,
+        rgba(255, 226, 180, 0.25),
+        transparent 70%
+    );
+    animation: candleGlow 6s ease-in-out infinite;
+}
+
+@keyframes candleGlow {
+    0%   { opacity: 0.4; transform: scale(1); }
+    50%  { opacity: 0.7; transform: scale(1.03); }
+    100% { opacity: 0.4; transform: scale(1); }
+}
+
+/* 2. Dust Particles */
+.dust-layer {
+    background-image: url('https://i.imgur.com/X3K9S5h.png');
+    background-size: cover;
+    opacity: 0.3;
+    animation: dustFloat 25s linear infinite;
+}
+
+@keyframes dustFloat {
+    0% { transform: translateY(0px) translateX(0px); }
+    50% { transform: translateY(-20px) translateX(10px); }
+    100% { transform: translateY(0px) translateX(0px); }
+}
+
+/* 3. Slow Moving Light Beams */
+.beam-layer {
+    background: linear-gradient(
+        115deg,
+        transparent 0%,
+        rgba(255, 240, 200, 0.12) 40%,
+        transparent 80%
+    );
+    mix-blend-mode: screen;
+    animation: lightBeam 12s ease-in-out infinite;
+}
+
+@keyframes lightBeam {
+    0% { transform: translateX(-20%) skewX(0deg); }
+    50% { transform: translateX(20%) skewX(3deg); }
+    100% { transform: translateX(-20%) skewX(0deg); }
+}
+
