@@ -44,12 +44,17 @@ p {
     position: relative;
     text-align: center;
     padding: 140px 30px 120px;
+
     background:
-        url('https://garden.spoonflower.com/c/15762957/p/f/m/Bkwn2TRVLXCXbhl5CQA7g3R5pQohvtjZBkIJJoxd5SLLog7aCBSQUd8/Dark%20Academia%20Vintage%20Book%20Shelves%20with%20Flowers.jpg') center/cover no-repeat;
+        linear-gradient(rgba(20, 20, 20, 0.92), rgba(20, 20, 20, 0.88)),
+        url('https://garden.spoonflower.com/c/15762957/p/f/m/Bkwn2TRVLXCXbhl5CQA7g3R5pQohvtjZBkIJJoxd5SLLog7aCBSQUd8/Dark%20Academia%20Vintage%20Book%20Shelves%20with%20Flowers.jpg') 
+        center/cover no-repeat;
+
     border-bottom: 1px solid #3e3225;
     box-shadow: 0 6px 20px rgba(0,0,0,0.5);
     overflow: hidden;
 }
+
 
 
 .site-header h1 {
