@@ -33,7 +33,7 @@ p {
     padding: 120px 30px 100px;
     background:
         linear-gradient(rgba(20, 20, 20, 0.95), rgba(20, 20, 20, 0.88)),
-        url('https://i.imgur.com/DTn0d9D.jpg') center/cover;
+        url('https://res.cloudinary.com/dap6pju8g/image/upload/q_100/luit7xcy0hwsgxquqfxn') center/cover;
     border-bottom: 1px solid #3e3225;
     overflow: hidden;
     box-shadow: 0 6px 20px rgba(0,0,0,0.5);
